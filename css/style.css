@@ -1,3 +1,4 @@
+/* Font Integration */
 @font-face {
     font-family: HelveticaNeueBold;
     src: url(../fonts/HelveticaNeueBold.ttf);
@@ -6,16 +7,9 @@
     font-family: HelveticaNeueLight;
     src: url(../fonts/HelveticaNeueLight.ttf);
 }
+/* Font Integration */
 
-body {
-	background-color: #212529;
-}
-header {
-	background-color: #343A40;
-	color: #7F7F7F;
-}
-
-/* Keyframes All */
+/* Animation Keyframes All */
 @keyframes dragon {
  0% {left: 10%;}
  25%{left: 20%;}
@@ -52,9 +46,18 @@ header {
  90%{transform: scaleX(-1); left: 20%;}
  100%{transform: scaleX(-1); left: 10%;}
 }
-/* Keyframes All */
+/* Animation Keyframes All */
+
+
+body {
+	background-color: #212529;
+}
 
 /* Header Start */
+header {
+	background-color: #343A40;
+	color: #7F7F7F;
+}
 .anime_content {
 	margin: 0 auto;
 	position: relative;
@@ -88,6 +91,7 @@ header {
 	animation-name: dragon;
 	color: #B0B0B0;
 	animation-delay: 1s;
+	animation-timing-function: ease-in-out;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
 }
@@ -98,6 +102,7 @@ header {
 	color: #FFFFFF;
 	animation-name: cloud_moon;
 	animation-delay: 1s;
+	animation-timing-function: linear;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
 }
@@ -109,7 +114,8 @@ header {
 	font-size: 50px;
 	color: white;
 	animation-name: spinning;
-	animation-duration: 20s;
+	animation-duration: 15s;
+	animation-timing-function: linear;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
 }
@@ -120,6 +126,7 @@ header {
 	color: #B0B0B0;
 	animation-name: ghost;
 	animation-delay: 0s;
+	animation-timing-function: linear;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 }
@@ -131,25 +138,19 @@ header {
 }
 .text_content h1 {
 	font-family: HelveticaNeueBold;
+	font-size: 25px;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 30px;
 }
-.text_content table {
+.text_content p {
 	font-family: HelveticaNeueLight;
-	width: 80%;
-	margin: 0 auto;
+	font-size: 16px;
 }
-.text_content table tr {
-	border-bottom: 1px solid #7F7F7F;
+.colored_text {
+	color: #ED1C24;
 }
-.text_content table tr th {
-	font-size: 20px;
-	font-weight: bold;
-	padding-bottom: 10px;
-	padding-left: 20px;
-}
-.text_content table tr td {
-	padding: 5px 0 5px 20px;
+.table-custom {
+	color: black;
 }
 /* Written Content */
 
@@ -191,6 +192,7 @@ footer {
 	animation-name: dove;
 	color: #00A2E8;
 	animation-delay: 1s;
+	animation-timing-function: linear;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
 }
@@ -200,6 +202,7 @@ footer {
 	right: 10%;
 	color: #FF8040;
 	animation-name: cloud_moon;
+	animation-timing-function: linear;
 	animation-delay: 1s;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
@@ -213,6 +216,7 @@ footer {
 	color: #212529;
 	animation-name: spinning;
 	animation-duration: 20s;
+	animation-timing-function: linear;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
 }
@@ -224,6 +228,7 @@ footer {
 	font-size: 15px;
 	animation-name: ghost;
 	animation-delay: 0s;
+	animation-timing-function: linear;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 }

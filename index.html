@@ -35,41 +35,110 @@
 
   	<!-- Written Content Start -->
 <section class="container">
-	<div class="text_content">
-	<h1>HTML Meta Tags</h1>
-		<table>
-			<tr>
-				<th>Attribute</th>
-				<th>Value</th>
-				<th>Description</th>
-			</tr>
-			<tr>
-				<td>charset</td>
-				<td>character_set</td>
-				<td>Specifies the character encoding for the HTML document.</td>
-			</tr>
-			<tr>
-				<td>content</td>
-				<td>text</td>
-				<td>Gives the value associated with the http-equiv or name attribute.</td>
-			</tr>
-			<tr>
-				<td>http-equiv</td>
-				<td>content-type <br>
-					default-style <br>
-					refresh</td>
-				<td>Provides an HTTP header for the information/value of the content attribute.</td>
-			</tr>
-			<tr>
-				<td>name</td>
-				<td>application-name <br>
+	<div class="text_content col-12 m-auto">
+		<h1>HTML Meta Tags</h1>
+		<table class="table table-striped table-dark">
+	  		<thead class="thead-light">
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">Attribute</th>
+			      <th scope="col">Value</th>
+			      <th scope="col">Description</th>
+			    </tr>
+			 </thead>
+			 <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>charset</td>
+			      <td>character_set</td>
+			      <td>Specifies the character encoding for the HTML document.</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>content</td>
+			      <td>text</td>
+			      <td>Gives the value associated with the http-equiv or name attribute.</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td>http-equiv</td>
+			      <td>content-type <br>
+						default-style <br>
+						refresh</td>
+			      <td>Provides an HTTP header for the information/value of the content attribute.</td>
+			    </tr>
+			     <tr>
+			      <th scope="row">4</th>
+			      <td>name</td>
+			      <td>application-name <br>
 					author <br>
 					description <br>
 					generator <br>
 					keywords <br>
 					viewport</td>
-				<td>Specifies a name for the metadata.</td>
-			</tr>
+			      <td>Specifies a name for the metadata.</td>
+			    </tr>
+			 </tbody>
+		</table>
+		<br>
+		<h1>Viewport & Settings of Viewport</h1>
+		<br>
+		<p>The viewport is the user's visible area of a web page. The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.</p>
+		<br>
+		<p>HTML5 introduced a method to let web designers take control over the viewport, through the <span class="colored_text">&#8826;meta&#8827;</span> tag.
+
+		You should include the following <span class="colored_text">&#8826;meta&#8827;</span> viewport element in all your web pages:
+		<span class="colored_text"><b>&#8826; meta name="viewport" content="width=device-width, initial-scale=1.0"&#8827;</b></span>
+		<br><br>
+		A <span class="colored_text">&#8826;meta&#8827;</span> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
+		<br><br>
+		The <b>"width=device-width"</b> part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+		<br><br>
+		The <b>"initial-scale=1"</b> part sets the initial zoom level when the page is first loaded by the browser.</p>
+	<br>
+	<h1>Bootstrap Media Queries Breakpoints</h1>
+	<br>
+		<table class="table table-light table-custom">
+	  		<thead class="thead-dark">
+			    <tr>
+			      <th scope="col">Display</th>
+			      <th scope="col">min-width</th>
+			      <th scope="col">max-width</th>
+			      <th scope="col">Devices</th>
+			    </tr>
+			 </thead>
+			 <tbody>
+			    <tr>
+			      <th scope="row">Extra-Small (xs)</th>
+			      <td>320px</td>
+			      <td>575px</td>
+			      <td>Mobile Phones (Potrait)</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">Small (sm)</th>
+			      <td>576px</td>
+			      <td>767px</td>
+			      <td>Mobile Phones (Landscape)</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">Medium (md)</th>
+			      <td>768px</td>
+			      <td>991px</td>
+			      <td>Tablets</td>
+			    </tr>
+			     <tr>
+			      <th scope="row">Large (lg)</th>
+			      <td>992px</td>
+			      <td>1199px</td>
+			      <td>Laptops & Desktops</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">Extra-Large (xl)</th>
+			      <td>1200px</td>
+			      <td>---</td>
+			      <td>Laptops & Desktops (Large Screens)</td>
+			    </tr>
+			 </tbody>
 		</table>
 	</div>
 </section>
