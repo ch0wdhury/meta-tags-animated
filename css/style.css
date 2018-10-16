@@ -1,0 +1,230 @@
+@font-face {
+    font-family: HelveticaNeueBold;
+    src: url(../fonts/HelveticaNeueBold.ttf);
+}
+@font-face {
+    font-family: HelveticaNeueLight;
+    src: url(../fonts/HelveticaNeueLight.ttf);
+}
+
+body {
+	background-color: #212529;
+}
+header {
+	background-color: #343A40;
+	color: #7F7F7F;
+}
+
+/* Keyframes All */
+@keyframes dragon {
+ 0% {left: 10%;}
+ 25%{left: 20%;}
+ 50%{left: 30%;}
+ 65%{left: 40%;}
+ 75%{transform: scaleX(-1); left: 40%;}
+ 80%{transform: scaleX(-1); left: 30%;}
+ 90%{transform: scaleX(-1); left: 20%;}
+ 100%{transform: scaleX(-1); left: 10%;}
+}
+@keyframes spinning {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@keyframes cloud_moon {
+ 0% {right: 10%;}
+ 25%{right: 15%;}
+ 50%{right: 20%;}
+ 75%{right: 15%;}
+ 100%{right: 10%;}
+}
+@keyframes ghost {
+ 0% {bottom: 10%;}
+ 50%{bottom: 20%;}
+ 100%{bottom: 10%;}
+}
+@keyframes dove {
+ 0% {left: 10%;}
+ 25%{left: 20%;}
+ 50%{left: 30%;}
+ 65%{left: 40%;}
+ 75%{transform: scaleX(-1); left: 40%;}
+ 80%{transform: scaleX(-1); left: 30%;}
+ 90%{transform: scaleX(-1); left: 20%;}
+ 100%{transform: scaleX(-1); left: 10%;}
+}
+/* Keyframes All */
+
+/* Header Start */
+.anime_content {
+	margin: 0 auto;
+	position: relative;
+	font-size: 40px;
+}
+.anime_content hr {
+	border: 1px solid #B0B0B0;
+	top: 100%;
+	bottom: 0;
+	margin: 0 auto;
+}
+.fa-tree {
+	position: absolute;
+	bottom: 0;
+	font-size: 50px;
+}
+.anime_content i:nth-child(4) {
+	position: absolute;
+	bottom: 0;
+	left: 60%;
+}
+.anime_content i:nth-child(7) {
+	position: absolute;
+	bottom: 0;
+	right: 5%;
+}
+.fa-dragon {
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+	animation-name: dragon;
+	color: #B0B0B0;
+	animation-delay: 1s;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.fa-cloud-moon {
+	position: absolute;
+	top: 20%;
+	right: 10%;
+	color: #FFFFFF;
+	animation-name: cloud_moon;
+	animation-delay: 1s;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.fa-globe-asia {
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	margin: 0 auto;
+	font-size: 50px;
+	color: white;
+	animation-name: spinning;
+	animation-duration: 20s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+.fa-ghost {
+	position: absolute;
+	bottom: 10%;
+	right: 25%;
+	color: #B0B0B0;
+	animation-name: ghost;
+	animation-delay: 0s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+/* Header End */
+
+/* Written Content */
+.text_content {
+	color: white;
+}
+.text_content h1 {
+	font-family: HelveticaNeueBold;
+	text-align: center;
+	margin-top: 20px;
+}
+.text_content table {
+	font-family: HelveticaNeueLight;
+	width: 80%;
+	margin: 0 auto;
+}
+.text_content table tr {
+	border-bottom: 1px solid #7F7F7F;
+}
+.text_content table tr th {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+.text_content table tr td {
+	padding: 5px 0 5px 20px;
+}
+/* Written Content */
+
+/* Footer Start */
+footer {
+	background-color: #EAEAEA;
+	color: #212529;
+}
+.anime_footer {
+	margin: 0 auto;
+	position: relative;
+	font-size: 40px;
+}
+.anime_footer hr {
+	border: 1px solid #212529;
+	top: 100%;
+	bottom: 0;
+	margin: 0 auto;
+}
+.anime_footer .fa-tree {
+	position: absolute;
+	bottom: 0;
+	font-size: 50px;
+}
+.anime_footer i:nth-child(4) {
+	position: absolute;
+	bottom: 0;
+	left: 60%;
+}
+.anime_footer i:nth-child(7) {
+	position: absolute;
+	bottom: 0;
+	right: 5%;
+}
+.fa-dove {
+	position: absolute;
+	left: 10%;
+	bottom: 30%;
+	animation-name: dove;
+	color: #00A2E8;
+	animation-delay: 1s;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.fa-cloud-sun {
+	position: absolute;
+	top: 20%;
+	right: 10%;
+	color: #FF8040;
+	animation-name: cloud_moon;
+	animation-delay: 1s;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.fa-globe-asia {
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	margin: 0 auto;
+	font-size: 50px;
+	color: #212529;
+	animation-name: spinning;
+	animation-duration: 20s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+.fa-spider {
+	position: absolute;
+	bottom: 10%;
+	right: 25%;
+	color: #212529;
+	font-size: 15px;
+	animation-name: ghost;
+	animation-delay: 0s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+/* Footer End */
