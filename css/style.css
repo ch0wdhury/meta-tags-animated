@@ -204,7 +204,7 @@ footer {
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
 }
-.fa-globe-asia {
+.anime_footer .fa-globe-asia {
 	position: absolute;
 	bottom: 20%;
 	left: 50%;
